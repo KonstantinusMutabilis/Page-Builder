@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="page">
+
+    </div>
+    <div class="builder">
+        <h1>Page Builder</h1>
+
+
+        <div id="Child1">
+            <form class="builderForm">
+                <label>צבע רקע</label>
+                <input type="color" id="bgColorChange" class="BuilderInput" name="bgcolor" value="#F4DCB3" />
+                <br>
+                <button class="btn" id="add">הוסף</button>
+            </form>
+        </div>
+
+        <div id="Child2" style="display: none;">
+            <form class="builderForm">
+                <label for="ElmentType">Element Type</label>
+                <select name="ElmentFontType" id="ElmentType" class="BuilderInput">
+                    <option value="div">div</option>
+                    <option value="p">p</option>
+                    <option value="h1">h1</option>
+                    <option value="h2">h2</option>
+                    <option value="h3">h3</option>
+                    <option value="button">button</option>
+                    <option value="a">a</option>
+                    <option value="span">span</option>
+                </select>
+            </form>
+
+            <form class="builderForm">
+                <label for="ElmentWidth">Element Width</label>
+                <input type="number" id="ElmentWidth" class="BuilderInput" value="150">
+            </form>
+
+            <form class="builderForm">
+                <label for="ElmentHeight">Element Height</label>
+                <input type="number" id="ElmentHeight" class="BuilderInput" value="120">
+                <form class="builderForm">
+                    <label for="ElmenBgColor">Element Background Color</label>
+                    <input type="color" id="ElmenBgColor" class="BuilderInput" name="ElmenBgColor" value="#5AEBD7" />
+                </form>
+            </form>
+
+            <form class="builderForm">
+                <label for="ElementContent">Element Content</label>
+                <input type="text" id="ElementContent" class="BuilderInput" value="text">
+            </form>
+
+            <form class="builderForm">
+                <label for="ElmentFontColor">Element Font Color</label>
+                <input type="color" id="ElmentContentColor" class="BuilderInput" name="ElmentFontColor"
+                    value="#130814" />
+
+            </form>
+
+            <div>
+                <form class="builderForm">
+                    <label for="ElmentFontHeight">Element Font Height</label>
+                    <input type="number" id="ElmentContentHeight" class="BuilderInput" value="1">
+                </form>
+
+                <form class="builderForm radio">
+                    <input type="radio" id="px" name="units" value="px">
+                    <label for="px">px</label>
+                    <input type="radio" id="rem" name="units" value="rem" checked="checked">
+                    <label for="rem">rem</label>
+                </form>
+            </div>
+
+            <form class="builderForm">
+                <label for="ElmentFontType">Element Font Type</label>
+                <select name="ElmentFontType" id="ElmentFontType" class="BuilderInput">
+                    <option value="Arial">Arial</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Comic Sans MS">Comic Sans MS</option>
+                    <option value="Trebuchet MS">Trebuchet MS</option>
+                </select>
+            </form>
+            <form class="Buttons">
+                <button class="btn" id="addElement">Add</button>
+                <button class="btn" id="edit">Edit</button>
+                <button class="btn" id="delete">Delete</button>
+                <button class="btn" id="clear">Clear</button>
+                <button class="btn" id="save">Save</button>
+                <button class="btn" id="load">load</button>
+            </form>
+            <p id="msg"></p>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
